@@ -1,0 +1,37 @@
+{
+  "name": "next-rsc-guardian",
+  "version": "1.0.0",
+  "description": "CLI that discovers Next.js repos and prepares safe patch PRs for RSC-related security fixes",
+  "main": "src/main.ts",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/main.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "rsc",
+    "security",
+    "github",
+    "cli"
+  ],
+  "license": "ISC",
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
+  "dependencies": {
+    "@octokit/rest": "^21.1.1",
+    "dotenv": "^17.2.3",
+    "semver": "^7.7.3",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^25.0.2",
+    "@types/semver": "^7.7.1",
+    "eslint": "^9.39.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.49.0"
+  }
+}
